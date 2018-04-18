@@ -1,0 +1,43 @@
+.card{
+  margin: 0 0 30rpx 0;
+  border: 
+}
+
+.series{
+  font-size: 0.5rem;
+  background-color: orange;
+  color: white;
+  line-height: 1.2rem;
+  margin: 10rpx 20rpx;
+  padding: 0 3rpx;
+}
+
+.name{
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin: 10rpx 20rpx;
+  padding: 5rpx;
+  font-weight: bold;
+}
+.advertise{
+  font-size: 0.6rem;
+  color: gray;
+  margin: 10rpx 20rpx;
+}
+.line{
+  height:1rpx;
+  background: #aaa;
+  margin:10rpx 20rpx;
+}
+.image{
+  margin: 10rpx 20rpx;
+  width: 250rpx;
+}
+.description{
+  font-size: 0.4rem;
+  color: lightgrey;
+  margin: 10rpx 20rpx;
+}
+.desc-item :before{
+  content: '*  '
+}

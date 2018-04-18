@@ -1,0 +1,26 @@
+<swiper indicator-dots="{{true}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view class="card" wx:for="{{cardlist}}" wx:key="id" wx:for-item="card">
+  <view style="display:flex">
+    <view class="series">NO. {{card.id}}</view>
+    <view class="name"> {{card.name}}</view>
+  </view>
+  <view class="advertise"> {{card.advertise}} </view>
+  <view style='display: flex'>
+    <image class="image" src="{{card.imgUrl}}" mode="widthFix"></image>
+    <view class="description">
+      <block wx:for="{{card.description}}" wx:for-item="discriptItem" wx:key="*this">  
+        <view class="desc-item">{{discriptItem}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="line"></view>
+</view>

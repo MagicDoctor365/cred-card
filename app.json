@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/card-market/card-market",
+    "pages/person-info/person-info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "浦发信用卡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/card-market/card-market",
+        "text": "卡超市"
+      },
+      {
+        "pagePath": "pages/person-info/person-info",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
