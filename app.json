@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/card-market/card-market",
-    "pages/person-info/person-info"
+    "pages/person-info/person-info",
+    "pages/shopping-mall/shopping-mall"
   ],
   "window": {
     "backgroundTextStyle": "light",
