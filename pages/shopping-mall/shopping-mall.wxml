@@ -1,2 +1,37 @@
-<!--pages/shopping-mall/shopping-mall.wxml-->
-<text>pages/shopping-mall/shopping-mall.wxml</text>
+<swiper indicator-dots="true"
+  autoplay="true" interval="3000" duration="1000">
+  <block wx:for="{{bannerImgUrl}}" wx:key="*this" wx:for-item="imgUrl">
+    <swiper-item>
+      <image src="{{imgUrl}}" class="slide-image" width="100%" height="100%" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="category-container">
+  <view class="category">
+    <text class="fa fa-laptop category-icon"></text>
+    <text class="category-text">数码</text>
+  </view>
+  <view class="category">
+    <text class="fa fa-shopping-bag category-icon"></text>
+    <text class="category-text">箱包</text>
+  </view>
+  <view class="category">
+    <text class="fa fa-bed category-icon"></text>
+    <text class="category-text">家居</text>
+  </view>
+</view>
+<view class="category-container">
+  <view class="category">
+    <text class="fa fa-book category-icon"></text>
+    <text class="category-text">书籍</text>
+  </view>
+  <view class="category">
+    <text class="fa fa-car category-icon"></text>
+    <text class="category-text">汽车</text>
+  </view>
+  <view class="category">
+    <text class="fa fa-birthday-cake category-icon"></text>
+    <text class="category-text">食品</text>
+  </view>
+</view>

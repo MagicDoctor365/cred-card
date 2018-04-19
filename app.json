@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/member-point/member-point",
+    "pages/shopping-mall/shopping-mall",
+    "pages/index/index",
     "pages/card-market/card-market",
-    "pages/person-info/person-info",
-    "pages/shopping-mall/shopping-mall"
+    "pages/person-info/person-info"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,8 +15,8 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/card-market/card-market",
-        "text": "卡超市"
+        "pagePath": "pages/index/index",
+        "text": "首页"
       },
       {
         "pagePath": "pages/person-info/person-info",
