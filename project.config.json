@@ -15,6 +15,11 @@
 	"appid": "wx3a1211aab6bade70",
 	"projectname": "credit-card",
 	"isGameTourist": false,
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
 	"condition": {
 		"search": {
 			"current": -1,

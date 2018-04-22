@@ -1,6 +1,6 @@
 .icon{
   border-radius: 20%;
-  margin: 20rpx;
+  margin: 20rpx 20rpx 0;
 }
 
 .container{
@@ -17,4 +17,11 @@
 
 .icon-text{
   font-size: 0.7rem;
+  margin: 20rpx;
+}
+
+.icon-desc {
+  font-size: 0.5rem;
+  color: #4a4a4a;
+  margin: 0 20rpx;
 }

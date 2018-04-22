@@ -16,12 +16,13 @@
   height: 150rpx;
   border-radius: 50%;
   border: 5rpx solid lightblue;
-  margin: 60rpx 30rpx;
+  margin: 50rpx 30rpx 0;
 }
 
 .username{
-  margin: 60rpx 20rpx;
+  margin: 0rpx 30rpx;
   color: white;
+  font-weight: bold;
 }
 
 .body{

@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/shopping-mall/shopping-mall",
     "pages/card-market/card-market",
     "pages/point/point",
-    "pages/shopping-mall/shopping-mall",
     "pages/person-info/person-info",
     "pages/social/social"
   ],

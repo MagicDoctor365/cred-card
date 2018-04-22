@@ -2,11 +2,19 @@
   autoplay="true" interval="3000" duration="1000">
   <block wx:for="{{bannerImgUrl}}" wx:key="*this" wx:for-item="imgUrl">
     <swiper-item>
-      <image src="{{imgUrl}}" class="slide-image" width="100%" height="100%" mode="widthFix"/>
+      <image src="{{imgUrl}}" class="banner-image" mode="widthFix"/>
     </swiper-item>
   </block>
 </swiper>
 
-<block wx:for="{{catglist}}" wx:for-item="line" wx:key="*this">
-    <icons icon-list="{{line}}" icon-size="width: 120rpx; height: 120rpx;"></icons>
+<block wx:for="{{catglist}}" wx:key="*this" wx:for-item="line">
+  <view  class="icon-container">
+    <view wx:for="{{line}}" wx:key="*this" wx:for-item="icon" class="item">
+      <image class="icon" style="width:180rpx; height:200rpx;" src="{{icon.imgUrl}}" mode="aspectFit" bindtap='listenerClick' data-hi="hello"></image>
+      <text class="icon-desc" wx:if="{{icon.desc}}">{{icon.desc}}</text>
+      <text class="icon-text" wx:if="{{icon.text}}">{{icon.text}}</text>
+    </view>
+</view>
 </block>
+
+<image src="/images/shopping-mall/point-exchange.png"  mode="widthFix" class="banner-image"></image>

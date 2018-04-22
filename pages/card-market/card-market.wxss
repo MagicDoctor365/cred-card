@@ -31,7 +31,7 @@
 }
 .image{
   margin: 10rpx 20rpx;
-  width: 250rpx;
+  width: 300rpx;
 }
 .description{
   font-size: 0.4rem;

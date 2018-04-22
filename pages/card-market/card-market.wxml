@@ -2,7 +2,7 @@
   autoplay="true" interval="3000" duration="1000">
   <block wx:for="{{cardlist}}" wx:key="id" wx:for-item="card">
     <swiper-item>
-      <image src="{{card.imgUrl}}" class="slide-image" width="355" height="150"/>
+      <image src="{{card.imgUrl}}" class="banner-image" mode="widthFix" />
     </swiper-item>
   </block>
 </swiper>
