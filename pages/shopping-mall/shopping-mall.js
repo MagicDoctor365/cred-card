@@ -2,6 +2,7 @@ var mydata = require("./data.js");
 
 Page({
   data: {
-    bannerImgUrl: mydata.bannerImgUrl
+    bannerImgUrl: mydata.bannerImgUrl,
+    catglist: mydata.catglist
   }
 })

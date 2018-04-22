@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "小浦商城"
+  "navigationBarTitleText": "小浦商城",
+  "usingComponents": {
+    "icons": "/components/icons/icons"
+  }
 }

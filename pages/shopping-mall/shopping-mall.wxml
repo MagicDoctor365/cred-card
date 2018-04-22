@@ -7,31 +7,6 @@
   </block>
 </swiper>
 
-<view class="category-container">
-  <view class="category">
-    <text class="fa fa-laptop category-icon"></text>
-    <text class="category-text">数码</text>
-  </view>
-  <view class="category">
-    <text class="fa fa-shopping-bag category-icon"></text>
-    <text class="category-text">箱包</text>
-  </view>
-  <view class="category">
-    <text class="fa fa-bed category-icon"></text>
-    <text class="category-text">家居</text>
-  </view>
-</view>
-<view class="category-container">
-  <view class="category">
-    <text class="fa fa-book category-icon"></text>
-    <text class="category-text">书籍</text>
-  </view>
-  <view class="category">
-    <text class="fa fa-car category-icon"></text>
-    <text class="category-text">汽车</text>
-  </view>
-  <view class="category">
-    <text class="fa fa-birthday-cake category-icon"></text>
-    <text class="category-text">食品</text>
-  </view>
-</view>
+<block wx:for="{{catglist}}" wx:for-item="line" wx:key="*this">
+    <icons icon-list="{{line}}" icon-size="width: 120rpx; height: 120rpx;"></icons>
+</block>

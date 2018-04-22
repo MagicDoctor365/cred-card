@@ -5,6 +5,34 @@ var bannerImgUrl = [
   "https://img.soonwill.com/adv//2017/1/1_170113093100.jpg"
 ]
 
+var catglist = [
+  [{
+    imgUrl: '/images/card-center-selected.png',
+    text: '数码'
+  },
+  {
+    imgUrl: '/images/card-center-selected.png',
+    text: '数码'
+  },
+  {
+    imgUrl: '/images/card-center-selected.png',
+    text: '数码'
+  }],
+  [{
+    imgUrl: '/images/card-center-selected.png',
+    text: '数码'
+  },
+  {
+    imgUrl: '/images/card-center-selected.png',
+    text: '数码'
+  },
+  {
+    imgUrl: '/images/card-center-selected.png',
+    text: '数码'
+  }]
+]
+
 module.exports = {
-  bannerImgUrl: bannerImgUrl
+  bannerImgUrl: bannerImgUrl,
+  catglist: catglist
 }

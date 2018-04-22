@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/member-point/member-point",
-    "pages/shopping-mall/shopping-mall",
-    "pages/index/index",
     "pages/card-market/card-market",
-    "pages/person-info/person-info"
+    "pages/point/point",
+    "pages/shopping-mall/shopping-mall",
+    "pages/person-info/person-info",
+    "pages/social/social"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,14 +13,40 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color": "#c5c5c5",
+    "selectedColor": "#1d3372",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "pagePath": "pages/card-market/card-market",
+        "text": "卡中心",
+        "iconPath": "images/app/card-center-unselected.png",
+        "selectedIconPath": "images/app/card-center-selected.png"
+      },
+      {
+        "pagePath": "pages/point/point",
+        "text": "积分",
+        "iconPath": "images/app/point-unselected.png",
+        "selectedIconPath": "images/app/point-selected.png"
+      },
+      {
+        "pagePath": "pages/shopping-mall/shopping-mall",
+        "text": "商城",
+        "iconPath": "images/app/shopping-unselected.png",
+        "selectedIconPath": "images/app/shopping-selected.png"
+      },
+      {
+        "pagePath": "pages/social/social",
+        "text": "社交",
+        "iconPath": "images/app/social-unselected.png",
+        "selectedIconPath": "images/app/social-selected.png"
       },
       {
         "pagePath": "pages/person-info/person-info",
-        "text": "个人中心"
+        "text": "我的",
+        "iconPath": "images/app/person-info-unselected.png",
+        "selectedIconPath": "images/app/person-info-selected.png"
       }
     ]
   },
