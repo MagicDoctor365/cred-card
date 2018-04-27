@@ -1,9 +1,0 @@
-<view>
-<view>我要攒积分</view>
-<icons icon-list="{{wanted}}" icon-size="width: 200rpx; height: 200rpx;"></icons>
-</view>
-
-<view>
-<view>积分消费</view>
-<icons icon-list="{{wanted}}" icon-size="width: 200rpx; height: 200rpx;"></icons>
-</view>

@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/game/game",
+    "pages/social/social",
     "pages/shopping-mall/shopping-mall",
     "pages/card-market/card-market",
-    "pages/point/point",
     "pages/person-info/person-info",
-    "pages/social/social"
+    "pages/game/buyflower/buyflower"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,10 +26,10 @@
         "selectedIconPath": "images/app/card-center-selected.png"
       },
       {
-        "pagePath": "pages/point/point",
-        "text": "积分",
-        "iconPath": "images/app/point-unselected.png",
-        "selectedIconPath": "images/app/point-selected.png"
+        "pagePath": "pages/game/game",
+        "text": "游戏",
+        "iconPath": "images/app/game-unselected.png",
+        "selectedIconPath": "images/app/game-selected.png"
       },
       {
         "pagePath": "pages/shopping-mall/shopping-mall",

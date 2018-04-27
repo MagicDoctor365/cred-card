@@ -1,7 +1,11 @@
-var myData = require('./data.js');
+// pages/game/buyflower/buyflower.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    wanted: myData.wanted
+  
   },
 
   /**
@@ -15,12 +19,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+  
   },
 
   /**
