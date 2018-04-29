@@ -1,6 +1,11 @@
 .card{
-  margin: 0 0 30rpx 0;
-  border: 
+  padding: 0 0 20rpx 0;
+  margin: 0 0 20rpx 0;
+  border-bottom: 1px solid gray;
+}
+
+.banner-image{
+  width: 100%;
 }
 
 .series{
@@ -20,24 +25,24 @@
   font-weight: bold;
 }
 .advertise{
-  font-size: 0.6rem;
-  color: gray;
+  font-size: 0.8rem;
+  color: #1d3372;
+  font-weight: bolder;
   margin: 10rpx 20rpx;
-}
-.line{
-  height:1rpx;
-  background: #aaa;
-  margin:10rpx 20rpx;
 }
 .image{
   margin: 10rpx 20rpx;
-  width: 300rpx;
+  width: 45%;
 }
 .description{
-  font-size: 0.4rem;
-  color: lightgrey;
+  font-size: 0.6rem;
+  color: #a4a4a4;
   margin: 10rpx 20rpx;
+  width: 55%;
 }
 .desc-item :before{
   content: '*  '
+}
+.btn-apply{
+  margin: 0 20rpx;
 }

@@ -1,3 +1,8 @@
 <view class="container">
   <canvas class="canvas" canvas-id="myCanvas"></canvas>
+  <view class="btns">
+  <button type="primary" bindtap='gotoFlowerShop'>逛花店</button>
+  <button type="primary">我的</button>
 </view>
+</view>
+

@@ -13,14 +13,16 @@
     <view class="series">NO. {{card.id}}</view>
     <view class="name"> {{card.name}}</view>
   </view>
-  <view class="advertise"> {{card.advertise}} </view>
-  <view style='display: flex'>
+  <view style="display:flex; justify-content: space-between;">
+    <view class="advertise"> {{card.advertise}} </view>
+        <button type="primary" size="mini" class="btn-apply" bindtap='apply' data-id="{{index}}">我要办卡</button>
+  </view>
+  <view style='display: flex;'>
     <image class="image" src="{{card.imgUrl}}" mode="widthFix"></image>
     <view class="description">
-      <block wx:for="{{card.description}}" wx:for-item="discriptItem" wx:key="*this">  
-        <view class="desc-item">{{discriptItem}}</view>
+      <block wx:for="{{card.description}}" wx:for-item="discriptItem" wx:key="*this"> 
+        <view class="desc-item">* {{discriptItem}}</view>
       </block>
     </view>
   </view>
-  <view class="line"></view>
 </view>

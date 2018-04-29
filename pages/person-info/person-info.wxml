@@ -1,19 +1,35 @@
 
 <view class="header" style="display:flex">
-  <image src="/images/person-info/header.png" class="header-img">
+  <image src="/images/person-info/header.png" class="header-img" mode="widthFix">
   </image>
   <view class="userinfo">
     <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
     <view class="name" class="username">{{userInfo.nickName}}</view>
   </view>
+
+  <view class="accesses">
+    <view class="access">
+      <image src="/images/person-info/account.png" mode="widthFix"></image>
+      <text>账户关联</text>
+    </view>
+    <view class="access">
+      <image src="/images/person-info/card-white.png" mode="widthFix"></image>
+      <text>快速开票</text>
+    </view>
+    <view class="access">
+      <image src="/images/person-info/form.png" mode="widthFix"></image>
+      <text>本行还款</text>
+    </view>
+  </view>
 </view>
 
-
 <view class="body">
-<block wx:for="{{iconList}}" wx:key="*this" wx:for-item="line">
-  <icons icon-list="{{line}}" icon-size="width: 100rpx; height: 100rpx;"></icons>
-</block>
+  <view wx:for="{{iconList}}" wx:key="*this" class="icon">
+    <image src="{{item.imgUrl}}" mode="widthFix"></image>
+    <text>{{item.text}}</text>
+  </view>
 </view>
 
 <view class="footer">
+  <image src="/images/person-info/footer.gif" mode="widthFix"></image>
 </view>

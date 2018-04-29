@@ -1,11 +1,14 @@
 {
   "pages": [
-    "pages/game/game",
-    "pages/social/social",
     "pages/shopping-mall/shopping-mall",
-    "pages/card-market/card-market",
     "pages/person-info/person-info",
+    "pages/social/social",
+    "pages/card-market/card-market",
+    
+    "pages/game/game",
     "pages/game/buyflower/buyflower"
+    
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

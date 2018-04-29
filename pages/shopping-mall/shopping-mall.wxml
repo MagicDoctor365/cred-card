@@ -7,14 +7,12 @@
   </block>
 </swiper>
 
-<block wx:for="{{catglist}}" wx:key="*this" wx:for-item="line">
-  <view  class="icon-container">
-    <view wx:for="{{line}}" wx:key="*this" wx:for-item="icon" class="item">
-      <image class="icon" style="width:180rpx; height:200rpx;" src="{{icon.imgUrl}}" mode="aspectFit" bindtap='listenerClick' data-hi="hello"></image>
-      <text class="icon-desc" wx:if="{{icon.desc}}">{{icon.desc}}</text>
-      <text class="icon-text" wx:if="{{icon.text}}">{{icon.text}}</text>
-    </view>
+<view class="container">
+<view wx:for="{{goods}}" wx:key="*this" class="goods">
+  <image src="{{item.imgUrl}}" mode="widthFix"></image>
+  <text class="desc">{{item.desc}}</text>
+  <text class="price">{{item.price}}</text>
 </view>
-</block>
+</view>
 
 <image src="/images/shopping-mall/point-exchange.png"  mode="widthFix" class="banner-image"></image>

@@ -1,1 +1,11 @@
-
+<view class="container">
+  <view wx:for="{{contacts}}" wx:key="*this" class="contact">
+    <view class="avatar-name">
+      <image src="{{item.imgUrl}}" mode="widthFix" class="avatar"></image>
+      <text class="name">{{item.name}}</text>
+    </view>
+    <view class="btns">
+      <button type="primary" size="mini" bindtap='invite' data-id="{{index}}">邀请</button>
+    </view>
+  </view>
+</view>

@@ -9,6 +9,8 @@
 
 .userinfo{
   position: absolute;
+  display:flex;
+  margin-top: 100rpx;
 }
 
 .avatar{
@@ -16,7 +18,7 @@
   height: 150rpx;
   border-radius: 50%;
   border: 5rpx solid lightblue;
-  margin: 50rpx 30rpx 0;
+  margin: 0 25rpx 0;
 }
 
 .username{
@@ -27,12 +29,60 @@
 
 .body{
   width: 100%;
-  height: 690rpx;
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 25rpx 0;
+}
+
+.icon image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.icon text {
+  font-size: 0.8rem;
+  color: gray;
+  padding: 10rpx;
 }
 
 .footer{
   width: 100%;
-  height: 200rpx;
-  background-color: deepskyblue;
+}
+
+.footer image{
+  width: 100%;
+}
+
+.accesses{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100rpx;
+  right: 50rpx;
+}
+.access{
+  display:flex;
+  align-items: center;
+  border: solid 1rpx white;
+  padding: 5rpx;
+  border-radius: 50rpx;
+  margin-bottom: 10rpx;
+}
+.access image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 10rpx;
+}
+.access text{
+  color: white;
+  font-size: 0.7rem;
 }

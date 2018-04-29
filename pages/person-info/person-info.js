@@ -8,7 +8,18 @@ Page({
     iconList: myData.iconList
   },
   onLoad: function (options) {
+    console.log(this.data.iconList);
     var userinfo = app.globalData.userInfo;
-    this.setData({userInfo: userinfo});
+    if (userinfo){
+      this.setData({ userInfo: userinfo });
+    } else {
+      this.setData({
+        userInfo: {
+          "avatarUrl": "/images/social/male.png",
+          "nickName": "未登录用户"
+        }
+      })
+    }
+    
   }
 })

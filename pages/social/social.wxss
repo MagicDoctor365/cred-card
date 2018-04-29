@@ -1,1 +1,21 @@
-/* pages/social/social.wxss */
+.container{
+  padding: 20rpx;
+}
+.contact{
+  padding: 20rpx 10rpx;
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  align-items: center;
+}
+.avatar-name{
+  display:flex;
+  align-items: center;
+}
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 30rpx 0 0;
+  padding: 0;
+  border-radius: 50%;
+}
