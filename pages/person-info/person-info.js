@@ -79,6 +79,17 @@ Page({
       content: content
     });
   },
+  getDealllist: function(){
+    var info = "";
+    myData.deallist.forEach((deal,index)=>{
+      info += (index+1) + ". "+ deal.desc + "消费" + deal.price +"元；"
+    });
+    info += "余额为"+myData.balance+"元。";
+    wx.showModal({
+      title: '我的账单',
+      content: info
+    });
+  },
   click: function(event) {
     var id = event.currentTarget.dataset.id;
     var icon = myData.iconList[id];
@@ -87,6 +98,7 @@ Page({
         this.getLimit();
         break;
       case 1:
+        this.getDealllist();
         break;
       case 2:
         this.getPoint();

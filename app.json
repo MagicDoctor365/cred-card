@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/card-market/card-market",
+    "pages/social/social",
     "pages/game/game",
     "pages/game/pointprofit/pointprofit",
-    "pages/card-market/card-market",
     "pages/person-info/person-info",
-    "pages/social/social",
     "pages/shopping-mall/shopping-mall",
     "pages/game/buyflower/buyflower",
     "pages/person-info/neighbour/neighbour"

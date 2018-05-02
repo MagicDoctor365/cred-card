@@ -7,16 +7,29 @@
   </block>
 </swiper>
 
+<view><text class="head">热门商品</text></view>
 <view class="container">
 <view wx:for="{{goods}}" wx:key="*this" class="goods">
   <image src="{{item.imgUrl}}" mode="widthFix"></image>
   <text class="desc">{{item.desc}}</text>
   <view class="price-point">
     <text class="price">￥{{item.price}}元</text>
-    <text class="point">{{item.point}}积分</text>
+    <text class="point">{{item.point}}分</text>
   </view>
   <view class="btn" bindtap='buy' data-id="{{index}}">购买</view>
 </view>
 </view>
 
-<image src="/images/shopping-mall/point-exchange.png"  mode="widthFix" class="banner-image"></image>
+<image src="/images/shopping-mall/point-exchange.png"  mode="widthFix" class="point-image"></image>
+
+<text class="head">积分换购</text>
+<view class="container">
+<view wx:for="{{pointsGoods}}" wx:key="*this" class="goods">
+  <image src="{{item.imgUrl}}" mode="widthFix"></image>
+  <text class="desc">{{item.desc}}</text>
+  <text class="point">{{item.point}}分</text>
+  <view class="btn" bindtap='exchange' data-id="{{index}}">换购</view>
+</view>
+</view>
+
+

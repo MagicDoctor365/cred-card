@@ -1,3 +1,16 @@
+<view class="icons">
+  <view class="icon">
+    <image src="/images/social/circle.png"></image>
+    <text>朋友圈</text>
+    <text class="desc">和朋友分享生活</text>
+  </view>
+  <view class="icon">
+    <image src="/images/social/notice.png"></image>
+    <text>通知</text>
+    <text class="desc">您有新的通知</text>
+  </view>
+</view>
+
 <view class="container">
   <view wx:for="{{contacts}}" wx:key="*this" class="contact">
     <view class="avatar-name">

@@ -17,6 +17,14 @@ Page({
       + flower.profit*100 + '%，需要消耗您'+ flower.price+'积分。',
       success: function (res) {
         if (res.confirm) {
+          if (persondata.points < flower.price) {
+            wx.showToast({
+              title: '积分不足！',
+              icon: 'none',
+              duration: 2000
+            });
+            return;
+          }
           //扣减积分
           persondata.points -= flower.price;
           mydata.flowers.push({

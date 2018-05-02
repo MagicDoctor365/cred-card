@@ -4,7 +4,7 @@
 </view>
 <view class="container">
   <view wx:for="{{flowersInShop}}" wx:key="*this" class="item">
-    <image src="{{item.imgUrl}}" mode="widthFix"></image>
+    <image src="{{item.imgUrl}}" mode="aspectFit"></image>
     <view class="detail">
       <text>花期：{{item.age}}天</text>
       <text>收益：{{item.profit * 100}}%</text>

@@ -1,14 +1,15 @@
 // pages/game/game.js
-var mydata = require('./data.js');
+var gamedata = require('./data.js');
 var util = require('./util.js');
-var gamedata = require("./data.js");
+var persondata = require('../person-info/data.js');
 
 Page({
   data: {
   },
   click: function(){
+    var that = this;
     wx.showActionSheet({
-      itemList: ['逛花店','查看收益'],
+      itemList: ['逛花店','查看收益','收获'],
       success: function (res) {
         switch(res.tapIndex) {
           case 0:
@@ -21,11 +22,32 @@ Page({
               url: 'pointprofit/pointprofit'
             })
             break;
+          case 2:
+            that.harvest();
           default:
             break;
         }
       }
     })
+  },
+  harvest: function(){
+    //清算积分
+    var flowers = gamedata.flowers;
+    var prePoint = persondata.points;
+    flowers.forEach(flower=>{
+      prePoint+=flower.gain;
+    });
+    persondata.points += prePoint;
+
+    //数据清空
+    gamedata.flowers=[];
+    gamedata.butterflies=[];
+    gamedata.birds=[];
+
+    wx.showModal({
+      title: '收获积分',
+      content: '您本月收获了'+prePoint+'积分，现有积分'+persondata.points
+    });
   },
   onLoad: function (options) {
   },
@@ -39,10 +61,10 @@ Page({
     var that = this;
     setInterval(() => {
       var context = wx.createCanvasContext('myCanvas');
-      context.drawImage("/images/game/bg.jpg", 0, 0, mydata.canvasWidth, mydata.canvasHeight);
+      context.drawImage("/images/game/bg.jpg", 0, 0, gamedata.canvasWidth, gamedata.canvasHeight);
 
       //确定花的坐标
-      var flowers = mydata.flowers;
+      var flowers = gamedata.flowers;
       flowers.forEach((flower, index) => {
         flower.x = util.x(index * 0.95 / flowers.length);
         flower.y = util.y(0.7);
@@ -65,14 +87,14 @@ Page({
       });
 
       //确定蝴蝶的坐标
-      var butterflies = mydata.butterflies;
+      var butterflies = gamedata.butterflies;
       butterflies.forEach((butterfly, index) => {
         butterfly.x = util.x(Math.random());
         butterfly.y = util.y(Math.random()*0.4+0.5);
       });
 
       //确定鸟的坐标
-      var birds = mydata.birds;
+      var birds = gamedata.birds;
       birds.forEach((bird) => {
         bird.x = util.x(Math.random());
         bird.y = util.y(Math.random()*0.4);
@@ -127,8 +149,8 @@ Page({
     //确定画布的宽和高
     wx.getSystemInfo({
       success: function (res) {
-        mydata.canvasWidth = res.windowWidth;
-        mydata.canvasHeight = res.windowHeight;
+        gamedata.canvasWidth = res.windowWidth;
+        gamedata.canvasHeight = res.windowHeight;
       }
     });
   }
