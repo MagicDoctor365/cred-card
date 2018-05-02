@@ -5,7 +5,7 @@
       <text class="name">{{item.name}}</text>
     </view>
     <view class="btns">
-      <button type="primary" size="mini" bindtap='invite' data-id="{{index}}">邀请</button>
+      <view class="btn" bindtap='invite' data-id="{{index}}">邀请</view>
     </view>
   </view>
 </view>

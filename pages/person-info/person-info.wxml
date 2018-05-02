@@ -1,6 +1,6 @@
 
 <view class="header" style="display:flex">
-  <image src="/images/person-info/header.png" class="header-img" mode="widthFix">
+  <image src="/images/person-info/header.gif" class="header-img" mode="widthFix">
   </image>
   <view class="userinfo">
     <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
@@ -24,7 +24,7 @@
 </view>
 
 <view class="body">
-  <view wx:for="{{iconList}}" wx:key="*this" class="icon">
+  <view wx:for="{{iconList}}" wx:key="*this" class="icon" bindtap='click' data-id="{{index}}">
     <image src="{{item.imgUrl}}" mode="widthFix"></image>
     <text>{{item.text}}</text>
   </view>

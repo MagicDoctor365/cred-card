@@ -1,5 +1,6 @@
 var mydata = require("../data.js");
 var util =require("../util.js");
+var persondata = require("../../person-info/data.js");
 Page({
   data: {
     flowersInShop: mydata.flowersInShop
@@ -16,12 +17,16 @@ Page({
       + flower.profit*100 + '%，需要消耗您'+ flower.price+'积分。',
       success: function (res) {
         if (res.confirm) {
+          //扣减积分
+          persondata.points -= flower.price;
           mydata.flowers.push({
+            id: flower.id,
             imgUrl: flower.imgUrl,
             name: flower.name,
             age: flower.age,
             profit: flower.profit,
-            price: flower.price
+            price: flower.price,
+            aspect: flower.aspect
           });
           wx.showToast({
             title: '购买成功！',

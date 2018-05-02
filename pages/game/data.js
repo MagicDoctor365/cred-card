@@ -6,9 +6,17 @@ var flowers = [];
 var birds = [];
 
 var allBirds = [
-  "/images/game/bird1.gif",
- "/images/game/bird2.gif"
-]
+  {
+      imgUrl: "/images/game/bird1.gif",
+      width: 60,
+      height: 63.18
+  },
+  {
+    imgUrl: "/images/game/bird2.gif",
+    width: 150,
+    height: 47.5
+  }
+];
 
 var allButterflies = [
   "/images/game/bf1.gif",
@@ -19,46 +27,85 @@ var allButterflies = [
 
 var flowersInShop = [
   {
+    id: 0,
     imgUrl: "/images/game/fl1.gif",
-    name: "姹紫嫣红",
-    age: 10,
-    profit: 0.2,
-    price: 100
+    name: "鸢尾",
+    age: 5,
+    profit: 100,
+    price: 450,
+    aspect: 1.5
   },
   {
+    id: 1,
     imgUrl: "/images/game/fl2.gif",
-    name: "清新脱俗",
-    age: 10,
-    profit: 0.2,
-    price: 100
+    name: "向日葵",
+    age: 6,
+    profit: 100,
+    price: 300,
+    aspect: 1.535
   },
   {
+    id: 2,
     imgUrl: "/images/game/fl3.gif",
-    name: "杏雨梨云",
-    age: 10,
-    profit: 0.2,
-    price: 100
+    name: "牵牛花",
+    age: 3,
+    profit: 50,
+    price: 350,
+    aspect: 1.18
   },
   {
+    id: 3,
     imgUrl: "/images/game/fl4.gif",
-    name: "亭亭玉立",
-    age: 10,
-    profit: 0.2,
-    price: 100
+    name: "玫瑰",
+    age: 5,
+    profit: 150,
+    price: 600,
+    aspect: 1.185
   },
   {
+    id: 4,
     imgUrl: "/images/game/fl5.gif",
-    name: "人面桃花",
-    age: 10,
-    profit: 0.2,
-    price: 100
+    name: "飞燕草",
+    age: 3,
+    profit: 50,
+    price: 300,
+    aspect: 1.355
   },
   {
+    id: 5,
     imgUrl: "/images/game/fl6.gif",
-    name: "暗香疏影",
+    name: "琴叶珊瑚",
     age: 10,
-    profit: 0.2,
-    price: 100
+    profit: 200,
+    price: 300,
+    aspect: 1.435
+  }
+];
+
+var eclipseDays = 0;
+var flowerWidth = 80;
+var butterflyWidth = 50;
+
+var gold = [
+  {
+    imgUrl: "/images/game/coin.gif",
+    width: 30,
+    height: 30
+  },
+  {
+    imgUrl: "/images/game/yuanbao.gif",
+    width: 40,
+    height: 28.8
+  },
+  {
+    imgUrl: "/images/game/gem.gif",
+    width: 30,
+    height: 28
+  },
+  {
+    imgUrl: "/images/game/diamond.gif",
+    width: 40,
+    height: 35
   }
 ];
 
@@ -69,6 +116,10 @@ module.exports = {
   flowers: flowers,
   birds: birds,
   allBirds: allBirds,
-  canvasWidth,
-  canvasHeight
+  canvasWidth: canvasWidth,
+  canvasHeight: canvasHeight,
+  eclipseDays: eclipseDays,
+  flowerWidth: flowerWidth,
+  butterflyWidth: butterflyWidth,
+  gold: gold
 }

@@ -15,7 +15,7 @@
   </view>
   <view style="display:flex; justify-content: space-between;">
     <view class="advertise"> {{card.advertise}} </view>
-        <button type="primary" size="mini" class="btn-apply" bindtap='apply' data-id="{{index}}">我要办卡</button>
+    <view class="btn" bindtap='apply' data-id="{{index}}">我要办卡</view>
   </view>
   <view style='display: flex;'>
     <image class="image" src="{{card.imgUrl}}" mode="widthFix"></image>

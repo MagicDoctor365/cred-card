@@ -21,11 +21,15 @@ Page({
       });
       if (contact.sex==="male"){
         gamedata.birds.push({
-          imgUrl: "/images/game/bird1.gif"
+          imgUrl: gamedata.allBirds[0].imgUrl,
+          width: gamedata.allBirds[0].width,
+          height: gamedata.allBirds[0].height,
         });
       } else {
         gamedata.birds.push({
-          imgUrl: "/images/game/bird2.gif"
+          imgUrl: gamedata.allBirds[1].imgUrl,
+          width: gamedata.allBirds[1].width,
+          height: gamedata.allBirds[1].height,
         });
       }
       

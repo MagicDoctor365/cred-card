@@ -38,6 +38,20 @@ var iconList = [
   }
 ];
 
+var points = 3000;
+var balance = 100000;
+var limit = 200000;
+var auth = ["消费", "取现", "分期"];
+var cards = [];
+var deallist = [];
+
+
 module.exports = {
-  iconList: iconList
+  iconList: iconList,
+  points: points,
+  balance: balance,
+  limit: limit,
+  auth: auth,
+  cards: cards,
+  deallist: deallist
 }

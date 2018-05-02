@@ -3,8 +3,8 @@
   <image src="/images/game/flowershop.jpg" class="banner" mode="widthFix"></image>
 </view>
 <view class="container">
-  <view wx:for="{{flowersInShop}}" class="item">
-    <image src="{{item.imgUrl}}"></image>
+  <view wx:for="{{flowersInShop}}" wx:key="*this" class="item">
+    <image src="{{item.imgUrl}}" mode="widthFix"></image>
     <view class="detail">
       <text>花期：{{item.age}}天</text>
       <text>收益：{{item.profit * 100}}%</text>

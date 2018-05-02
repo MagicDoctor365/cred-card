@@ -1,4 +1,4 @@
-// pages/index.js
+// pages/person-info/neighbour/neighbour.js
 Page({
 
   /**

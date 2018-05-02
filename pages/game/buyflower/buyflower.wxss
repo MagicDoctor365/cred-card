@@ -1,6 +1,5 @@
-image {
+.item image {
   width: 160rpx;
-  height: 200rpx;
 }
 .container{
   display:flex;
@@ -8,6 +7,9 @@ image {
 }
 .item{
   width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .name{
   font-size: 0.8rem;

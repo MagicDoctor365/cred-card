@@ -11,7 +11,11 @@
 <view wx:for="{{goods}}" wx:key="*this" class="goods">
   <image src="{{item.imgUrl}}" mode="widthFix"></image>
   <text class="desc">{{item.desc}}</text>
-  <text class="price">{{item.price}}</text>
+  <view class="price-point">
+    <text class="price">￥{{item.price}}元</text>
+    <text class="point">{{item.point}}积分</text>
+  </view>
+  <view class="btn" bindtap='buy' data-id="{{index}}">购买</view>
 </view>
 </view>
 

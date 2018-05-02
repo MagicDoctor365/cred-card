@@ -1,5 +1,6 @@
 var mydata = require("./data.js");
 var gamedata = require("../game/data.js");
+var persondata = require("../person-info/data.js");
 
 Page({
   data: {
@@ -17,6 +18,8 @@ Page({
       content: '请您充分核实您的个人信息，确认办理',
       success: function (res) {
         if (res.confirm) {
+          //办理成功后往cards增添一项
+          persondata.cards.push(cardToApply.name);
           //办理成功后增加一个蝴蝶
           var butterfly = gamedata.allButterflies[id];
           gamedata.butterflies.push({

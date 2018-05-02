@@ -1,0 +1,33 @@
+<view>
+  <view class="section">
+    <view class="section-header">积分</view>
+    <text class="section-body">您当前的积分为：{{points}}分</text>
+  </view>
+  <view class="section">
+    <view class="section-header">时间</view>
+    <text class="section-body">流逝的时间（天）：</text>
+    <slider step="1" min="0" max="30" show-value block-color="#1d3372" activeColor="#1d3372" bindchange="daysChange" value="{{eclipseDays}}"/>
+  </view>
+  <view class="section">
+    <view class="section-header">收益增长分析</view>
+    <view class="analyze section-body">您一共办了{{butterflyNum}}张信用卡，引来了{{butterflyNum}}只蝴蝶，蝴蝶催熟花朵，缩短了花期{{reduceAgePercent}}。您一共邀请了{{birdNum}}客户加入浦发信用卡，引来了{{birdNum}}只小鸟，小鸟为花朵除虫害，让果实长得更好，增加了{{increaseProfitPercent}}的每期收益。</view>
+  </view>
+  <view class="section">
+    <view class="section-header">收益统计</view>
+    <view class="thead">
+      <view class="td">鲜花</view>
+      <view class="td">数量</view>
+      <view class="td">原收益/月</view>
+      <view class="td">现收益/月</view>
+    </view>
+    <view class="tbody">
+      <view wx:for="{{groupedFlowers}}" wx:key="*this" class="tr">
+        <view class="td">{{item.name}}</view>
+        <view class="td">{{item.amount}}</view>
+        <view class="td">{{item.preProfit}}</view>
+        <view class="td">{{item.curProfit}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>

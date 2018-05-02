@@ -43,6 +43,6 @@
 .desc-item :before{
   content: '*  '
 }
-.btn-apply{
+.btn{
   margin: 0 20rpx;
 }

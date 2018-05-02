@@ -16,8 +16,8 @@
 }
 
 .goods image{
-  width: 270rpx;
-  height: 270rpx;
+  width: 230rpx;
+  height: 230rpx;
 }
 
 .desc{
@@ -27,6 +27,27 @@
 }
 
 .price{
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  padding: 5rpx 0;
   margin: 10rpx 0;
+  background-color: #D9D500;
+  border-radius: 15rpx;
+  color: white;
+}
+
+.point{
+  font-size: 0.6rem;
+  margin: 10rpx 0;
+  background-color: orangered;
+  border-radius: 15rpx;
+  padding: 5rpx 0;
+  color: white;
+}
+
+.price-point{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20rpx;
 }
