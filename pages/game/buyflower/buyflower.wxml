@@ -7,7 +7,7 @@
     <image src="{{item.imgUrl}}" mode="aspectFit"></image>
     <view class="detail">
       <text>花期：{{item.age}}天</text>
-      <text>收益：{{item.profit * 100}}%</text>
+      <text>收益：{{item.profit}}积分/花期</text>
       <text>价格：{{item.price}}积分</text>
     </view>
     <text class="name">{{item.name}}</text>
